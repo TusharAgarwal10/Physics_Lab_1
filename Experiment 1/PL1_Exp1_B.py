@@ -30,20 +30,18 @@ intercept = approx[1]
 # final value of time period to be used for plotting the grapj
 ftp = (slope * length) + intercept
 
-print(slope)
-print(intercept)
-
 # g in m/s**2, apparently
-g = 4* np.pi ** 2 / slope
+g = 4* (np.pi ** 2) / slope
 
-print("g:", g)
-
+r_err = 0.001
 
 plt.scatter(length, atp, color = "red", label = "Data Points")
 plt.plot(length, ftp, color = "blue", label = "Fit")
 plt.ylim([0.5,2.5])
 plt.ylabel("Time Period (second square)")
 plt.xlabel("Length (m)")
+plt.text(0.20,1.75,fr'$y = {np.round(slope,2)}x + {np.round(intercept,2)}$')
+plt.errorbar(length, atp, yerr = r_err, capsize=5, ecolor = "black", label = "ErrorBar", linestyle = "None")
 plt.legend()
 plt.show()  
 
