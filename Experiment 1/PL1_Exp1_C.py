@@ -11,12 +11,15 @@ intercept = approx_line[1]
 
 final_tp = slope * angle + intercept
 
+r_err = 0.001
+
 plt.scatter(angle,avg_time, color = "red", label = "Data Points")
 plt.plot(angle,final_tp, color = "blue", label = "Fit")
 plt.ylabel("Time Period (second)")
 plt.xlabel("Angle (degree)")
 plt.ylim([0.5,1.5])
 plt.xlim([-10,100])
-plt.legend()
 plt.text(10,1.2,fr'$y = {np.round(slope,2)}x + {np.round(intercept,2)}$')
+plt.errorbar(angle, avg_time, yerr = r_err, capsize=5, ecolor = "black", label = "ErrorBar", linestyle = "None")
+plt.legend()
 plt.show()
