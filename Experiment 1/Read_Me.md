@@ -6,7 +6,6 @@ the data collected are then used to calculate the acceleration due to gravity. I
 report, the details of the experiment and the findings are presented. 
 
 Data (csv)
-
 30th Jan and 1st Feb	
 Experiment 1: Simple Pendulum		
 
