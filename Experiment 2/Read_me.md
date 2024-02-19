@@ -7,11 +7,11 @@ the same spring constant is studied. In this report, the details of the experime
 are presented.
 
 Data (csv)
-
 13th Feb and 15th Feb
 Experiment 2: 	Minimum-energy Configuration of a Slinky
 
 Part 1: Measured the spring constant by studying the relationship between the extension of a section of a slinky with different masses attached at the end.
+
 Part 2: Studied the relationship between the extension length of each section of a slinky and and its original length.
 
 Data collected with my lab partner, Shreyansh Kumar.
