@@ -1,0 +1,8 @@
+order (m),d_grating_wall (D) (cm),d_center_max (cm)
+order,distance,length
+1,176.5,1.5
+2,176.5,2.5
+3,176.5,3.6
+4,176.5,4.7
+5,176.5,5.7
+6,176.5,6.8
